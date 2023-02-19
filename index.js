@@ -13,7 +13,7 @@ const distPath = path.join(DIST_DIR, "index.html");
 const render = require("./src/htmlrender"); //template html renderer
 
 
-const employees = [];
+const employees = []; 
 
 // Generates which role
 employeeType = () => {
