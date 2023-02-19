@@ -7,8 +7,8 @@ const Manager = require('./lib/manager');
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "dist"); 
-const outputPath = path.join(DIST_DIR, "index.html");
+const DIST_DIR = path.resolve(__dirname, "dist"); 
+const distPath = path.join(DIST_DIR, "index.html");
 
 const render = require("./src/htmlrender"); //template html renderer
 
@@ -165,7 +165,7 @@ const init = () => {
 
 renderHtml = () => {
     const buildHTML = render(employees);
-    fs.writeFile(outputPath, buildHTML, (err) => {
+    fs.writeFile(distPath, buildHTML, (err) => {
         if (err) {
             return console.log(err);
         } else {
