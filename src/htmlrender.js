@@ -1,31 +1,33 @@
-module.exports = employees=>{
-  return`<!DOCTYPE html>
-<html lang="en">
+//module.exports = 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>My Team Profile</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-    </head>
-    <body>
-        <section class="hero is-info is-bold">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">My Badass Team</h1>
-                </div>
-            </div>
-        </section>
-        <main class="m-6">
-            <div class="columns is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-center">
-    ${render(employees)}
-            </div>
-        </main>
-    </body>
-    </html>
-`};
+//const employees =()=>{
+//   return`<!DOCTYPE html>
+// <html lang="en">
+
+//     <head>
+//         <meta charset="UTF-8">
+//         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//         <title>My Team Profile</title>
+//         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+//         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
+//     </head>
+//     <body>
+//         <section class="hero is-info is-bold">
+//             <div class="hero-body">
+//                 <div class="container">
+//                     <h1 class="title">My Badass Team</h1>
+//                 </div>
+//             </div>
+//         </section>
+//         <main class="m-6">
+//             <div class="columns is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-center">
+//     ${render(employees)}
+//             </div>
+//         </main>
+//     </body>
+//     </html>
+// `};
 
 
 const renderManager = ({name, id, email, officeNumber}) => {
@@ -102,7 +104,7 @@ const renderIntern = ({name, id, email, school}) => {
 
 `};
 
-const render = employees => {
+module.exports =render = employees => {
   const html = [];
 
   html.push(employees
@@ -118,6 +120,36 @@ const render = employees => {
     .map(intern => renderIntern(intern))
   );
 
-  return html.join("");
+  const final= html.join("");
+
+return`<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Team Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
+    </head>
+    <body>
+        <section class="hero is-info is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">My Badass Team</h1>
+                </div>
+            </div>
+        </section>
+        <main class="m-6">
+            <div class="columns is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-center">
+     ${final}
+            </div>
+        </main>
+    </body>
+    </html>
+`
 
 };
+
+

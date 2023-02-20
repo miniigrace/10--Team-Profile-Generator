@@ -1,8 +1,8 @@
 //dependencies and constructor variables
 const inquirer = require("inquirer");
-const Engineer = require('./lib/engineer');
-const Intern = require('./lib/intern');
-const Manager = require('./lib/manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
 
 const path = require("path");
 const fs = require("fs");
@@ -11,7 +11,7 @@ const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "index.html");
 
 const render = require("./src/htmlrender"); //template html renderer
-
+const employeesData = require('./src/htmlrender')
 
 const employees = []; 
 
