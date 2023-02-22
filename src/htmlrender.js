@@ -46,7 +46,7 @@ const renderManager = ({name, id, email, officeNumber}) => {
             <div class="content">
                 <p><span class="has-text-weight-bold">ID:</span>${id}<br />
                 <span class="has-text-weight-bold">Email:</span> <a href="mailto:Keanu.Reeves@email.com" class="has-text-info">${email}</a><br />
-                <span class="has-text-weight-bold">Office Number:${officeNumber}</span></p>
+                <span class="has-text-weight-bold">Office Number: </span>${officeNumber}</p>
             </div>
         </div>
     </div>
@@ -94,9 +94,9 @@ const renderIntern = ({name, id, email, school}) => {
             </div>
 
             <div class="content">
-                <p><span class="has-text-weight-bold">ID:${id}</span> 003<br />
+                <p><span class="has-text-weight-bold">ID:${id}</span><br />
                 <span class="has-text-weight-bold">Email:</span> <a href="mailto:Minii.Grace@email.com" class="has-text-info">${email}</a><br />
-                <span class="has-text-weight-bold">School:${school}</span>  target="_blank" class="has-text-info">miniigrace</p>
+                <span class="has-text-weight-bold">School:${school}</span>  <target="_blank" class="has-text-info">miniigrace</p>
             </div>
         </div>
     </div>
