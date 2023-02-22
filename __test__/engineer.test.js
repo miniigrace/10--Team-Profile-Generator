@@ -1,6 +1,5 @@
-//engineer parent class needs to include: name, id, email, github
 const Engineer = require("../lib/Engineer");
-//const engineer = new engineer('MiniGrace', '1234', 'grashahyde@gmail.com');
+
 
 test("Can instantiate Engineer instance", () => {
   const e = new Engineer();
