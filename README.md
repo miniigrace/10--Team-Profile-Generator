@@ -19,7 +19,7 @@ The following images show the web application's appearance and functionality:
 ![html](https://user-images.githubusercontent.com/112984208/220541718-269a8a20-039c-42bd-9186-cc88b6c2b5f6.png)
 
 
-## For walkthrough video, you can [Click here](https://drive.google.com/file/d/1Ihn0hnr51YJ60dyxxEyIDbxIHCe1LWQB/view)
+## Check the walkthrough video how to use the application : [Click here](https://drive.google.com/file/d/1Ihn0hnr51YJ60dyxxEyIDbxIHCe1LWQB/view)
 
 ## Installation and Test Instructions
 
